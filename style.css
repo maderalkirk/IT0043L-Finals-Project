@@ -95,3 +95,91 @@ nav a:hover {
 .register-btn:hover {
   background-color: #c83728;
 }
+
+/* Request blood css */
+
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.request-form {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.blood-type-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding-top: 5px;
+}
+
+.blood-type-options label {
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: #e94e3b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Georgia', serif;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background-color: #c83728;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-family: 'Times New Roman', serif;
+  background-color: #fff;
+  border-top: 1px solid #000;
+}
