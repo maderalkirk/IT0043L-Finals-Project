@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f6f7f9;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: red;
+}
+
+nav a {
+  margin-left: 35px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-family: 'Times New Roman', serif;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(233,78,59,0.9), rgba(251,180,72,0.8));    /*gradient background*/
+  padding: 70px 40px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.feature {
+  flex: 1;
+  max-width: 320px;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.feature i {
+  font-size: 70px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.feature h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.feature p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Times New Roman', serif;
+}
+
+.register-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.register-btn {
+  background-color: #e94e3b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Georgia', serif;
+}
+
+.register-btn:hover {
+  background-color: #c83728;
+}
