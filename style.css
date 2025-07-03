@@ -31,7 +31,8 @@ nav a {
   font-family: 'Times New Roman', serif;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   text-decoration: underline;
 }
 
@@ -46,6 +47,7 @@ nav a:hover {
   padding: 70px 40px;
   border-radius: 4px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .feature {
@@ -55,9 +57,10 @@ nav a:hover {
   margin: 0 15px;
 }
 
-.feature i {
-  font-size: 70px;
-  color: #000;
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
   margin-bottom: 25px;
 }
 
@@ -90,10 +93,6 @@ nav a:hover {
   cursor: pointer;
   transition: background 0.3s;
   font-family: 'Georgia', serif;
-}
-
-.register-btn:hover {
-  background-color: #c83728;
 }
 
 /* Request blood css */
@@ -173,6 +172,11 @@ h2 {
 }
 
 .submit-button:hover {
+  background-color: #c83728;
+}
+
+
+.register-btn:hover {
   background-color: #c83728;
 }
 
