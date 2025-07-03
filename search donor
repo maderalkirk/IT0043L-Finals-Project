@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BloodLink - Search Donor/Recipients</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            border-bottom: 2px solid #ccc;
+            padding: 16px 0 0 0;
+            margin-bottom: 24px;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        nav a {
+            text-decoration: none;
+            color: #222;
+            margin: 0 18px;
+            font-size: 1.08rem;
+            transition: color 0.2s;
+            position: relative;
+        }
+        nav a.active, nav a:hover {
+            color: #c0392b;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+        .search-section {
+            margin-bottom: 30px;
+        }
+        .search-label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-right: 12px;
+        }
+        .search-bar {
+            width: 350px;
+            max-width: 90vw;
+            padding: 10px 18px;
+            border: 2px solid #bbb;
+            border-radius: 24px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .search-bar:focus {
+            border-color: #c0392b;
+        }
+        .results-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px 60px;
+        }
+        .result-item {
+            display: flex;
+            align-items: flex-start;
+            width: 45%;
+            margin-bottom: 24px;
+        }
+        .result-img {
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+            background: #eaeaea;
+            margin-right: 18px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+        }
+        .result-info {
+            flex: 1;
+        }
+        .result-name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 220px;
+        }
+        .result-type {
+            font-size: 0.97rem;
+            color: #555;
+            margin-bottom: 2px;
+        }
+        .result-location {
+            font-size: 0.95rem;
+            color: #888;
+        }
+        @media (max-width: 900px) {
+            .results-list {
+                flex-direction: column;
+                gap: 0;
+            }
+            .result-item {
+                width: 100%;
+            }
+        }
+        @media (max-width: 600px) {
+            .nav-container, .container {
+                padding: 0 10px;
+            }
+            .search-bar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Blood<span>Link</span></div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Request Blood</a>
+                <a href="#" class="active">Search Donor/Recipients</a>
+                <a href="#">Contacts Us</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="search-section">
+            <label class="search-label" for="search">Donors and Recipients</label>
+            <input type="text" id="search" class="search-bar" placeholder="Search...">
+        </section>
+        <section class="results-list" id="results">
+            <!-- Example result items -->
+            <div class="result-item">
+                <img class="result-img" src="https://i.redd.it/fbd1lzq94l211.jpg" alt="Profile">
+                <div class="result-info">
+                    <div class="result-name">LeBonbon Delos... <span style="font-weight:400;">(Donor)</span></div>
+                    <div class="result-type">Blood Type A-</div>
+                    <div class="result-location">Pasig City</div>
+                </div>
+            </div>
+            <div class="result-item">
+                <img class="result-img" src="https://www.usab.com/imgproxy/t_5TqEqmnXzM2fyls-IgIMBDB7pYmD6pU6j4oVTevhI/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvMDI1NTQ0YzgtNjgzYS00ZWJjLThhYTAtYTdjOTFmZTU3ODhjLmpwZw.png" alt="Profile">
+                <div class="result-info">
+                    <div class="result-name">Kevin Burhatt <span style="font-weight:400;">(Recipient)</span></div>
+                    <div class="result-type">Blood Type Need: AB</div>
+                    <div class="result-location">Quezon City</div>
+                </div>
+            </div>
+            <div class="result-item">
+                <img class="result-img" src="https://ntvb.tmsimg.com/assets/assets/70789_v9_bb.jpg?w=360&h=480" alt="Profile">
+                <div class="result-info">
+                    <div class="result-name">Dee Dy <span style="font-weight:400;">(Recipient)</span></div>
+                    <div class="result-type">Blood Type Need: O+</div>
+                    <div class="result-location">Pasig City</div>
+                </div>
+            </div>
+            <div class="result-item">
+                <img class="result-img" src="https://i.redd.it/fbd1lzq94l211.jpg" alt="Profile">
+                <div class="result-info">
+                    <div class="result-name">LeBonbon Delos... <span style="font-weight:400;">(Donor)</span></div>
+                    <div class="result-type">Blood Type A-</div>
+                    <div class="result-location">Pasig City</div>
+                </div>
+            </div>
+            <div class="result-item">
+                <img class="result-img" src="https://www.usab.com/imgproxy/t_5TqEqmnXzM2fyls-IgIMBDB7pYmD6pU6j4oVTevhI/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvMDI1NTQ0YzgtNjgzYS00ZWJjLThhYTAtYTdjOTFmZTU3ODhjLmpwZw.png" alt="Profile">
+                <div class="result-info">
+                    <div class="result-name">Kevin Burhatt <span style="font-weight:400;">(Recipient)</span></div>
+                    <div class="result-type">Blood Type Need: AB</div>
+                    <div class="result-location">Quezon City</div>
+                </div>
+            </div>
+            <div class="result-item">
+                <img class="result-img" src="https://ntvb.tmsimg.com/assets/assets/70789_v9_bb.jpg?w=360&h=480" alt="Profile">
+                <div class="result-info">
+                    <div class="result-name">Dee Dy <span style="font-weight:400;">(Recipient)</span></div>
+                    <div class="result-type">Blood Type Need: O+</div>
+                    <div class="result-location">Pasig City</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Simple search filter
+        const searchInput = document.getElementById('search');
+        const results = document.getElementById('results');
+        const items = Array.from(results.children);
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            items.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                item.style.display = text.includes(query) ? 'flex' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
