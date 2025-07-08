@@ -44,4 +44,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+    const searchInput = document.getElementById('search');
+    const results = document.getElementById('results');
+    const items = Array.from(results.children);
+
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+      items.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(query) ? 'flex' : 'none';
+      });
+    });
+  
+
   
