@@ -1,103 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>BloodLink - Search Donor/Recipients</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registration - BloodLink</title>
+    <link rel="stylesheet" href="style.css" />
+
+   </head>
 <body>
  <header>
   <div class="header-row">
     <div class="logo">Blood<span>Link</span></div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="requestblood.html">Request Blood</a>
-      <a href="search_donor.html"class="active">Search Donor/Recipients</a>
+      <a href="requestblood.html" class="active">Request Blood</a>
+      <a href="search_donor.html">Search Donor/Recipients</a>
       <a href="register.html">Registration</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </div>
 </header>
 
-  <main class="content">
-    <section class="search-section">
-      <h2>Donors and Recipients</h2>
-      <div style="text-align:center; margin-bottom:30px;">
-        <input type="text" id="search" class="search-bar" placeholder="Search..." />
-      </div>
-    </section>
-
-    <section class="results-list" id="results">
-      <div class="result-item">
-        <img class="result-img" src="https://i.redd.it/fbd1lzq94l211.jpg" alt="Profile">
-        <div class="result-info">
-          <div class="result-name">LeBonbon Delos... <span style="font-weight:400;">(Donor)</span></div>
-          <div class="result-type">Blood Type A-</div>
-          <div class="result-location">Pasig City</div>
-        </div>
-      </div>
-      <div class="result-item">
-        <img class="result-img" src="https://www.usab.com/imgproxy/t_5TqEqmnXzM2fyls-IgIMBDB7pYmD6pU6j4oVTevhI/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvMDI1NTQ0YzgtNjgzYS00ZWJjLThhYTAtYTdjOTFmZTU3ODhjLmpwZw.png" alt="Profile">
-        <div class="result-info">
-          <div class="result-name">Kevin Burhatt <span style="font-weight:400;">(Recipient)</span></div>
-          <div class="result-type">Blood Type Need: AB</div>
-          <div class="result-location">Quezon City</div>
-        </div>
-      </div>
-      <div class="result-item">
-        <img class="result-img" src="https://ntvb.tmsimg.com/assets/assets/70789_v9_bb.jpg?w=360&h=480" alt="Profile">
-        <div class="result-info">
-            <div class="result-name">Dee Dy <span style="font-weight:400;">(Recipient)</span></div>
-            <div class="result-type">Blood Type Need: O+</div>
-            <div class="result-location">Pasig City</div>
-        </div>
-    </div>
-    <div class="result-item">
-        <img class="result-img" src="https://i.redd.it/fbd1lzq94l211.jpg" alt="Profile">
-        <div class="result-info">
-            <div class="result-name">LeBonbon Delos... <span style="font-weight:400;">(Donor)</span></div>
-            <div class="result-type">Blood Type A-</div>
-            <div class="result-location">Pasig City</div>
-        </div>
-    </div>
-    <div class="result-item">
-        <img class="result-img" src="https://www.usab.com/imgproxy/t_5TqEqmnXzM2fyls-IgIMBDB7pYmD6pU6j4oVTevhI/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvMDI1NTQ0YzgtNjgzYS00ZWJjLThhYTAtYTdjOTFmZTU3ODhjLmpwZw.png" alt="Profile">
-        <div class="result-info">
-            <div class="result-name">Kevin Burhatt <span style="font-weight:400;">(Recipient)</span></div>
-            <div class="result-type">Blood Type Need: AB</div>
-            <div class="result-location">Quezon City</div>
-        </div>
-    </div>
-    <div class="result-item">
-        <img class="result-img" src="https://ntvb.tmsimg.com/assets/assets/70789_v9_bb.jpg?w=360&h=480" alt="Profile">
-        <div class="result-info">
-            <div class="result-name">Dee Dy <span style="font-weight:400;">(Recipient)</span></div>
-            <div class="result-type">Blood Type Need: O+</div>
-            <div class="result-location">Pasig City</div>
-        </div>
-    </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 BloodLink. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const searchInput = document.getElementById('search');
-    const results = document.getElementById('results');
-    const items = Array.from(results.children);
-
-    searchInput.addEventListener('input', function() {
-      const query = this.value.toLowerCase();
-      items.forEach(item => {
-        const text = item.innerText.toLowerCase();
-        item.style.display = text.includes(query) ? 'flex' : 'none';
-      });
-    });
-  </script>
+    <main class="container">
+        <section class="form-section">
+            <h2>Register as Donor or Recipient</h2>
+            <form action="#" method="POST" class="register-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="09XX-XXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="bloodtype">Blood Type</label>
+                    <select id="bloodtype" name="bloodtype" required>
+                        <option value="">Select your blood type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address / City</label>
+                    <input type="text" id="address" name="address" placeholder="City or Full Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Registering As</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select role</option>
+                        <option value="Donor">Donor</option>
+                        <option value="Recipient">Recipient</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
