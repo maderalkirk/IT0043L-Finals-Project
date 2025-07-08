@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
+    //search results for search_donor.html
     const searchInput = document.getElementById('search');
     const results = document.getElementById('results');
     const items = Array.from(results.children);
