@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">Blood<span>Link</span></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="requestblood.html">Request Blood</a>
-      <a href="search_donor.html" class="active">Search Donor/Recipients</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+ </head>
+<body>
+    <header>
+        <div class="logo">Blood<span>Link</span></div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="requestblood.html" >Request Blood</a>
+          <a href="search_donor.html" class="active">Search Donor/Recipients</a>
+          <a href="register.html">Registration</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </header>
 
   <main class="content">
     <section class="search-section">
@@ -27,17 +30,17 @@
 
     <section class="results-list" id="results">
       <div class="result-item">
-        <img class="result-img" src="https://i.redd.it/fbd1lzq94l211.jpg" alt="Profile">
+        <img class="result-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9FZ7MQbvAvRS6atfmGYKYMjPhGIRxREK34g&s" alt="Profile">
         <div class="result-info">
-          <div class="result-name">LeBonbon Delos... <span style="font-weight:400;">(Donor)</span></div>
+          <div class="result-name">Kamote Chips <span style="font-weight:400;">(Donor)</span></div>
           <div class="result-type">Blood Type A-</div>
           <div class="result-location">Pasig City</div>
         </div>
       </div>
       <div class="result-item">
-        <img class="result-img" src="https://www.usab.com/imgproxy/t_5TqEqmnXzM2fyls-IgIMBDB7pYmD6pU6j4oVTevhI/rs:fit:3000:0:0/g:ce/q:90/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3VzYWItY29tLXByb2QvdXBsb2FkLzIwMjQvMDcvMDkvMDI1NTQ0YzgtNjgzYS00ZWJjLThhYTAtYTdjOTFmZTU3ODhjLmpwZw.png" alt="Profile">
+        <img class="result-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWGBURExMYHSggGBolGxUVITEhJSkrLi4uGB8zODMsNygtLisBCgoKDg0NEg8KDisZExkrKysrKysrKysrKystKy0rKysrKysrKysrKysrLSsrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAIBABAQEAAgMAAgMAAAAAAAAAAAERAiExQWGh4QNRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDuIAM73mXx56z/ABoAQooAJJ57/QKAAAAAAAAAAAAAAAAIoDH8XO8uMtl42zvjc2fLjYAIoCSYoAAAACKgAAAAAACiaAqKgCgCFAAElm2f15BQAAAAAA1QQAAAFQ3tQIAAAAACAAAAAAoAAnagAAgqAAAAAUAAsDQAAAAAAUAAC0AAEk6JAAFQAIAEFAAAAAAARUAAAAAAABQQABUAAAUABLFAAAAAAAAARRMAVLcUAAAAExUAURQRQAEUARQAAAQFEUAAAAAAAAASgKJKAsAAEUAQBQAEm+xQRQAAAAAAABOW+vP0BQBJdCKAAAAAACXjufPz0omAoICoqASYoAAAAAAAQAEqgCKm9qCKACKAAUAAAQ0FAAAAAAAoIACiAKIAoIBigAAACaCgAAAAAAAkUAAARQAAAAAEAUAEVAAABUAUAEz9KAAAAAAAAEBOU1QAABL8UAAAAAAAAAAAAAQAAAADAUSb7UEqgAJaoIoAAAAAAAkUABL4UAEwFAwAokBQLAAAAAQAAE5XJbluep5oKEoAoAAAzZvV78VRQS3FAACgAAJIoAAAAAAAAAAAJqgAAAAgAAABAA1QAAAAAAAAAABLT38AFAAAAAATABQAAAAAf//Z" alt="Profile">
         <div class="result-info">
-          <div class="result-name">Kevin Burhatt <span style="font-weight:400;">(Recipient)</span></div>
+          <div class="result-name">John Cena <span style="font-weight:400;">(Recipient)</span></div>
           <div class="result-type">Blood Type Need: AB</div>
           <div class="result-location">Quezon City</div>
         </div>
@@ -67,9 +70,9 @@
         </div>
     </div>
     <div class="result-item">
-        <img class="result-img" src="https://ntvb.tmsimg.com/assets/assets/70789_v9_bb.jpg?w=360&h=480" alt="Profile">
+        <img class="result-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Vico_Sotto_ARTA_%28cropped%29.jpg/250px-Vico_Sotto_ARTA_%28cropped%29.jpg" alt="Profile">
         <div class="result-info">
-            <div class="result-name">Dee Dy <span style="font-weight:400;">(Recipient)</span></div>
+            <div class="result-name">Diako C. Sotto <span style="font-weight:400;">(Recipient)</span></div>
             <div class="result-type">Blood Type Need: O+</div>
             <div class="result-location">Pasig City</div>
         </div>
@@ -80,19 +83,6 @@
   <footer>
     <p>&copy; 2025 BloodLink. All rights reserved.</p>
   </footer>
-
-  <script>
-    const searchInput = document.getElementById('search');
-    const results = document.getElementById('results');
-    const items = Array.from(results.children);
-
-    searchInput.addEventListener('input', function() {
-      const query = this.value.toLowerCase();
-      items.forEach(item => {
-        const text = item.innerText.toLowerCase();
-        item.style.display = text.includes(query) ? 'flex' : 'none';
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
