@@ -38,9 +38,9 @@ header {
 }
 
 .logo {
+  font-family: Georgia, serif;
   font-size: 26px;
   font-weight: bold;
-  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .logo span {

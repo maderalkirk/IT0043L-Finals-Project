@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Registration - BloodLink</title>
+    <title>Request Blood - BloodLink</title>
     <link rel="stylesheet" href="style.css" />
-
-  </head>
+</head>
 <body>
     <header>
         <div class="logo">Blood<span>Link</span></div>
@@ -19,52 +18,63 @@
         </nav>
       </header>
 
-    <main class="container">
-        <section class="form-section">
-            <h2>Register as Donor or Recipient</h2>
-            <form action="#" method="POST" class="register-form">
+
+    <main>
+        <section>
+            <h2>Request Blood Form</h2>
+            <form action="submit_request.php" method="POST" class="request-form">
                 <div class="form-group">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+                    <label for="first_name">Full Name:</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="First name*" required />
+                    <input type="text" id="last_name" name="last_name" placeholder="Last name*" required />
                 </div>
+
                 <div class="form-group">
-                    <label for="contact">Contact Number</label>
-                    <input type="tel" id="contact" name="contact" placeholder="09XX-XXX-XXXX" required>
+                    <label for="address">Home Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Address*" required />
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email*" required />
                 </div>
+
                 <div class="form-group">
-                    <label for="bloodtype">Blood Type</label>
-                    <select id="bloodtype" name="bloodtype" required>
-                        <option value="">Select your blood type</option>
-                        <option value="A+">A+</option>
-                        <option value="A-">A-</option>
-                        <option value="B+">B+</option>
-                        <option value="B-">B-</option>
-                        <option value="AB+">AB+</option>
-                        <option value="AB-">AB-</option>
-                        <option value="O+">O+</option>
-                        <option value="O-">O-</option>
-                    </select>
+                    <label for="contact_number">Contacts/Area Code:</label>
+                    <input type="text" id="contact_number" name="contact_number" placeholder="Contact number*" required />
+                    <input type="text" id="area_code" name="area_code" placeholder="Area code*" required />
                 </div>
+
                 <div class="form-group">
-                    <label for="address">Address / City</label>
-                    <input type="text" id="address" name="address" placeholder="City or Full Address" required>
+                    <label>Your Blood Type:</label>
+                    <div class="blood-type-options">
+                      <label><input type="radio" name="blood_type" value="O-" required> O-</label>
+                      <label><input type="radio" name="blood_type" value="O+"> O+</label>
+                      <label><input type="radio" name="blood_type" value="AB-"> AB-</label>
+                      <label><input type="radio" name="blood_type" value="AB+"> AB+</label>
+                      <label><input type="radio" name="blood_type" value="B-"> B-</label>
+                      <label><input type="radio" name="blood_type" value="B+"> B+</label>
+                      <label><input type="radio" name="blood_type" value="A-"> A-</label>
+                      <label><input type="radio" name="blood_type" value="A+"> A+</label>
+                    </div>
                 </div>
+                  </div>
+                  
+
                 <div class="form-group">
-                    <label for="role">Registering As</label>
-                    <select id="role" name="role" required>
-                        <option value="">Select role</option>
-                        <option value="Donor">Donor</option>
-                        <option value="Recipient">Recipient</option>
-                    </select>
+                    <label for="comments">Additional comments:</label>
+                    <textarea id="comments" name="comments" placeholder="Additional comments*" rows="4"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Register Now</button>
+
+                <input type="submit" value="Submit" class="submit-button" />
             </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 BloodLink. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
