@@ -450,3 +450,73 @@ footer {
     height: 100px;
   }
 }
+
+
+.merch-container {
+  padding: 40px 20px;
+}
+
+.merch-title {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.merch-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.merch-item:hover {
+  transform: translateY(-5px);
+}
+
+.merch-img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.merch-name {
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  margin-bottom: 5px;
+}
+
+.merch-price {
+  font-size: 16px;
+  color: #e94e3b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  padding: 10px 20px;
+  background-color: #e94e3b;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #c83728;
+}
